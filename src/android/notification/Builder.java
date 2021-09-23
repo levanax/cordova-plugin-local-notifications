@@ -274,12 +274,16 @@ public final class Builder {
 
         String text = options.getText();
 
-        if (text != null && text.contains("\n")) {
-            applyInboxStyle(builder);
-            return;
-        }
+        // 2021-9-23
+        // if (text != null && text.contains("\n")) {
+        //     applyInboxStyle(builder);
+        //     return;
+        // }
 
-        if (text == null || summary == null && text.length() < 45)
+        // if (text == null || summary == null && text.length() < 45)
+        //     return;
+            
+        if (text == null)
             return;
 
         applyBigTextStyle(builder);
