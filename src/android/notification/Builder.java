@@ -210,13 +210,13 @@ public final class Builder {
 
         String text = options.getText();
 
-        if (text != null && text.contains("\n")) {
-            applyInboxStyle(builder);
-            return;
-        }
+        // if (text != null && text.contains("\n")) {
+        //     applyInboxStyle(builder);
+        //     return;
+        // }
 
-        if (text == null || summary == null && text.length() < 45)
-            return;
+        // if (text == null || summary == null && text.length() < 45)
+        //     return;
 
         applyBigTextStyle(builder);
     }
